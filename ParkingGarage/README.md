@@ -43,45 +43,11 @@ Inherits from: Vehicle, IPreOrderable
 
 fields: 
 1. Id
-2. HourlyRate
+2. Type
 
 Methods:
-1. EnterForParking
-2. PreOrderParking
-3. Exit
-4. Pay
-5. GetVehicleType
+GetVehicleType()
 
-
-DisabledVehicle
-
-Inherits from: Vehicle, IPreOrderable
-
-fields: 
-1. Id
-2. HourlyRate
-
-Methods:
-1. EnterForParking
-2. PreOrderParking
-3. Exit
-4. Pay
-5. GetVehicleType
-
-
-Motorcycle
-
-Inherits from: Vehicle
-
-fields: 
-1. Id
-2. HourlyRate
-
-Methods:
-1. EnterForParking
-2. Exit
-3. Pay
-4. GetVehicleType
 
 
 CashTerminal
@@ -101,11 +67,12 @@ Methods:
 Pay
 
 
-ParkingManagement
+RepositoryParking
 
 fields:
 Orders
 PreOrders
+ParkingsList
 
 Methods:
 CreateOrder(string VehicleId, string ParkingId)
@@ -114,5 +81,6 @@ CalculatePrice()
 CloseOrder()
 RunSummary()
 HasPreOrder()
+GetAvailableParking
 
 Logger 

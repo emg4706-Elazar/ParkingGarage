@@ -1,19 +1,23 @@
 ﻿using System;
-
+using ParkingGarage.VehicleTypes;
 
 namespace ParkingGarage.Vehicles
 {
-    abstract class Vehicle
+    class Vehicle
     {
         public string Id { get; }
-        abstract public double HourlyRate { get; protected set; }
+        public VehicleType Type { get; }
 
-        public Vehicle(string id)
+        public Vehicle(string id, VehicleType type)
         {
             Id = id;
+            Type = type;
         }
 
-        abstract public string GetVehicleType();
+        public VehicleType GetVehicleType()
+        {
+            return Type;
+        }
         
     }
 }

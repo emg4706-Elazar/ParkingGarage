@@ -7,6 +7,7 @@ namespace ParkingGarage.VehicleTypes
     {
         PrivateVehicle,
         DisabledVehicle,
-        Motorcycle
+        Motorcycle,
+        Vheicle
     }
 }
